@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+
+
+require __DIR__.'/vendor/autoload.php';
+
+
+dump(num(0.0000000000000000000000000000000001, 18)->add(0.49999999999999999999999999999999)->float());

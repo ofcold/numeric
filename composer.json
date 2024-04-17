@@ -1,0 +1,52 @@
+{
+	"name": "ofcold/numeric-component",
+	"type": "package",
+	"description": "A high-precision digital processor",
+	"keywords": [
+		"numeric",
+		"digital processor"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Ryan Li",
+			"email": "ryan@ofcold.com",
+			"homepage": "https://github.com/ofcold/numeric-component",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": "^8.2"
+	},
+	"require-dev": {
+		"orchestra/testbench": "^8.21",
+		"phpunit/phpunit": "^10.5"
+	},
+	"autoload": {
+		"psr-4": {
+			"Ofcold\\NumericComponent\\": "src/"
+		},
+		"files": [
+			"helpers/helpers.php"
+		]
+	},
+	 "autoload-dev": {
+		"psr-4": {
+			"Ofcold\\NumericComponentTests\\": "tests/"
+		}
+	},
+	"scripts": {
+		"test": "phpunit",
+		"analyse": "phpstan analyse",
+		"pint": "pint"
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"sort-packages": true,
+		"allow-plugins": {
+			"pestphp/pest-plugin": true
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
